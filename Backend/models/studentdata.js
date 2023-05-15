@@ -10,19 +10,22 @@ const studentSchema = mongoose.Schema({
         required: true,
         unique: true,    
     },
-    registration: {
+    course: {
         type: String,
         required: true,
-        unique: true,
     },
-    subjects: {
-        type: [String],
+    address: {
+        type: String,
         required: true,
     },
-    registered_on: {
-        type: Date,
-        default: new Date(),
-    },
+     phone :{
+        type : Number,
+        required :true,
+     },
+    // registered_on: {
+    //     type: Date,
+    //     default: new Date(),
+    // },
 
 })
 

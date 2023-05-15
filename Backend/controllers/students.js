@@ -32,9 +32,10 @@ const createstudent =  async (req, res) => {
     const newstudent = new Student({
         name:req.body.name,
         roll:req.body.roll,
-        registration:req.body.registration,
-        subjects:req.body.subjects,
-        created_on:req.body.created_on
+        course:req.body.course,
+        address:req.body.address,
+        phone:req.body.phone
+        // created_on:req.body.created_on
 
     })
     try {
@@ -56,8 +57,9 @@ const updatestudent = async (req, res) => {
         },
         {   
             name:req.body.name,
-            registration:req.body.registration,
-            subjects:req.body.subjects,
+            course:req.body.course,
+            address:req.body.address,
+            phone:req.body.phone,
             created_on:req.body.created_on
         }
         )
